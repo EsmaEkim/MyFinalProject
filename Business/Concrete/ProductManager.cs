@@ -37,7 +37,7 @@ namespace Business.Concrete
         {
             //Jobcodes
             //z.B Hat der Benutzer Berechtigung?
-            if (DateTime.Now.Hour==22)
+            if (DateTime.Now.Hour==6)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
