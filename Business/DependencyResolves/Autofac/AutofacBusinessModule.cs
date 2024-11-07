@@ -4,6 +4,7 @@ using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Interceptors;
+using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace Business.DependencyResolves.Autofac
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<ProductManager>().As<IProductService>().SingleInstance();
-            builder.RegisterType<EfProductDal>().As<IProductService>().SingleInstance();
+            builder.RegisterType<EfProductDal>().As<IProductDal>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

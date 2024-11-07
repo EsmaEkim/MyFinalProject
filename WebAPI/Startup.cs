@@ -33,7 +33,7 @@ namespace WebAPI
             //AOP
             //Postsharp
             services.AddControllers();
-            //services.AddSingleton<IProductService,ProductManager>();
+            //services.AddSingleton<IProductService, ProductManager>();
             //services.AddSingleton<IProductDal, EfProductDal>();
         }
 
