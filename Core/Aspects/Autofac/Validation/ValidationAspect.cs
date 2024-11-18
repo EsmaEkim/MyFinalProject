@@ -1,4 +1,4 @@
-﻿using Castle.DynamicProxy;
+﻿    using Castle.DynamicProxy;
 using Core.CrossCuttingConcerns.Validation;
 using FluentValidation;
 using System;
@@ -14,6 +14,7 @@ namespace Core.Aspects.Autofac.Validation
         private Type _validatorType;
         public ValidationAspect(Type validatorType)
         {
+            //defensive coding
             if (!typeof(IValidator).IsAssignableFrom(validatorType))
             {
                 throw new System.Exception("Dies ist keine Validierungsklasse.");
