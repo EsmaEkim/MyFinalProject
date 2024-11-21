@@ -8,7 +8,7 @@ namespace Business.CCS
     {
         public void Log()
         {
-            Console.WriteLine("Dosya loglandı");
+            Console.WriteLine("Die Datei wurde protokolliert.");
         }
     }
 }
