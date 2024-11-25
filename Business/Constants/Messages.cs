@@ -18,5 +18,7 @@ namespace Business.Constants
         public static string CategoryUpdated = "Die Kategorie wurde aktualisiert";
         public static string CategoryListed = "Die Kategorien wurden aufgelistet";
         public static string ProductCountOfCategoryError="In einer Kategorie können maximal 10 Produkte sein.";
+        public static string ProductNameAlreadyExists = "Unter diesem Namen gibt es schon ein anderes Produkt.";
+        public static string CategoryLimitExceded = "Wegen der Überschreitung des Kategorienlimits können keine neuen Produkte hinzugefügt werden.";
     }
 }
