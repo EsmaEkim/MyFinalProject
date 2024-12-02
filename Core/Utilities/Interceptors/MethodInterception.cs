@@ -1,10 +1,10 @@
 ﻿using Castle.DynamicProxy;
 using System;
 
+
 namespace Core.Utilities.Interceptors
 {
-    public partial class Class1
-    {
+    
         public abstract class MethodInterception : MethodInterceptionBaseAttribute
         {
             //invocation: business method
@@ -36,5 +36,5 @@ namespace Core.Utilities.Interceptors
                 OnAfter(invocation);
             }
         }
-    }
+    
 }

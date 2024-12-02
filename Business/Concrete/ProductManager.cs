@@ -1,5 +1,5 @@
 ﻿using Business.Abstract;
-using Business.CCS;
+using Business.BusinessAspects.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
@@ -28,8 +28,8 @@ namespace Business.Concrete
             _productDal = productDal;
             
         }
-
-        //[ValidationAspect(typeof(ProductValidator))]
+        [SecuredOperation("product.add")]
+        [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
             //business codes
@@ -44,7 +44,7 @@ namespace Business.Concrete
 
             return new SuccessResult(Messages.ProductAdded);
 
-            
+             
             
         }
 
