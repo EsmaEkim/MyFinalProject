@@ -2,7 +2,6 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using static Core.Utilities.Interceptors.Class1;
 
 namespace Core.Utilities.Interceptors
 {
