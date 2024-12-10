@@ -26,6 +26,7 @@ namespace Business.Concrete
         public ProductManager(IProductDal productDal,ICategoryService categoryService)
         {
             _productDal = productDal;
+            _categoryService = categoryService;
             
         }
         [SecuredOperation("product.add,admin")]
@@ -109,7 +110,7 @@ namespace Business.Concrete
         private IResult CheckIfCategoryLimitExceded()
         {
             var result = _categoryService.GetAll();
-            if (result.Data.Count>15)
+            if (result.Data.Count>55)
             {
                 return new ErrorResult(Messages.CategoryLimitExceded);
             }
