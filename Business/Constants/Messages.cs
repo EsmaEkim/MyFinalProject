@@ -29,6 +29,6 @@ namespace Business.Constants
         public static string PasswordError= "Falsches Passwort.";
         public static string SuccessfulLogin= "Erfolgreiche Anmeldung.";
         public static string UserAlreadyExists= "Benutzer ist bereits vorhanden.";
-        public static string AccessTokenCreated= "Token wurde erstellt.";
+        public static string AccessTokenCreated= "Anmeldung erfolgt.";
     }
 }
